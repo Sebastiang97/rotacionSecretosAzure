@@ -1,0 +1,435 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5" pages="6">
+  <diagram name="Arq Ref" id="jcOXj4wu7SJ-SqKt8iJM">
+    <mxGraphModel dx="819" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="WhxGQ5jxsOz0-zOknpN9-0" />
+        <mxCell id="WhxGQ5jxsOz0-zOknpN9-1" parent="WhxGQ5jxsOz0-zOknpN9-0" />
+        <mxCell id="xUzEOyUtguPJg5AWQJIM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;strokeWidth=2;" edge="1" parent="WhxGQ5jxsOz0-zOknpN9-1" source="WhxGQ5jxsOz0-zOknpN9-12" target="xUzEOyUtguPJg5AWQJIM-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="224" y="244" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WhxGQ5jxsOz0-zOknpN9-12" value="Key Vault" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="WhxGQ5jxsOz0-zOknpN9-1">
+          <mxGeometry x="190" y="470" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="WhxGQ5jxsOz0-zOknpN9-15" value="Storage Account" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="WhxGQ5jxsOz0-zOknpN9-1">
+          <mxGeometry x="581.5" y="478" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="xUzEOyUtguPJg5AWQJIM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" edge="1" parent="WhxGQ5jxsOz0-zOknpN9-1" source="xUzEOyUtguPJg5AWQJIM-0" target="WhxGQ5jxsOz0-zOknpN9-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="340" />
+              <mxPoint x="460" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xUzEOyUtguPJg5AWQJIM-0" value="Function App" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="WhxGQ5jxsOz0-zOknpN9-1">
+          <mxGeometry x="580" y="310" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xUzEOyUtguPJg5AWQJIM-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;strokeWidth=2;" edge="1" parent="WhxGQ5jxsOz0-zOknpN9-1" source="xUzEOyUtguPJg5AWQJIM-1" target="xUzEOyUtguPJg5AWQJIM-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xUzEOyUtguPJg5AWQJIM-1" value="Event Grid" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Topics.svg;" vertex="1" parent="WhxGQ5jxsOz0-zOknpN9-1">
+          <mxGeometry x="350" y="214" width="67" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xUzEOyUtguPJg5AWQJIM-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=30;strokeWidth=2;" edge="1" parent="WhxGQ5jxsOz0-zOknpN9-1" source="xUzEOyUtguPJg5AWQJIM-0" target="WhxGQ5jxsOz0-zOknpN9-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="_vekXoXHab5yewwAdB7L" name="Rotación de llaves de acceso ST - Flujo de datos">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zF2rWbynfQ4SQ-kUngxf-1" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: access-key-st&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: key1&lt;/li&gt;&lt;li&gt;ProviderAddress: storage account id&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storage Account&lt;/li&gt;&lt;ul&gt;&lt;li&gt;key1: última rotación: 0 días&lt;/li&gt;&lt;li&gt;key2: última rotación: 0 días&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Creación inicial del secreto en el Key Vault&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: access-key-st&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: key1&lt;/li&gt;&lt;li&gt;ProviderAddress: storage account id&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storage Account&lt;/li&gt;&lt;ul&gt;&lt;li&gt;key1: última rotación: 0 días&lt;/li&gt;&lt;li&gt;key2: última rotación: 0 días&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="250" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="PLib5eQC6KbIeMbSQFXk-1" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: access-key-st&lt;/li&gt;&lt;li&gt;tags secreto:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: key1&lt;/li&gt;&lt;li&gt;ProviderAddress: storage account id&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storage Account&lt;/li&gt;&lt;ul&gt;&lt;li&gt;key1: última rotación: 45 días&lt;/li&gt;&lt;li&gt;key2: última rotación: 45 días&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;30 días antes del vencimiento del secreto, es decir a los 45 días de creado el secreto, se genera el evento de&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Se ejecuta el proceso de rotación de llaves&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: access-key-st&lt;/li&gt;&lt;li&gt;tags secreto:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: key2&lt;/li&gt;&lt;li&gt;ProviderAddress: storage account id&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storage Account&lt;/li&gt;&lt;ul&gt;&lt;li&gt;key1: última rotación: 45 días&lt;/li&gt;&lt;li&gt;key2: última rotación: 0 días&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="20" width="250" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="QroEDM-Uj-i0I-1douGu-1" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: access-key-st&lt;/li&gt;&lt;li&gt;tags secreto:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: key2&lt;/li&gt;&lt;li&gt;ProviderAddress: storage account id&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storage Account&lt;/li&gt;&lt;ul&gt;&lt;li&gt;key1: última rotación: 90 días&lt;/li&gt;&lt;li&gt;key2: última rotación: 45 días&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nuevamente a los 30 días antes del vencimiento del secreto, es decir a los 45 días de la última rotación, se genera el evento de&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Se ejecuta el proceso de rotación de llaves&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: access-key-st&lt;/li&gt;&lt;li&gt;tags secreto:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: key1&lt;/li&gt;&lt;li&gt;ProviderAddress: storage account id&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storage Account&lt;/li&gt;&lt;ul&gt;&lt;li&gt;key1: última rotación: 0 días&lt;/li&gt;&lt;li&gt;key2: última rotación: 45 días&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="620" y="20" width="250" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="w_-O6dFFJTNv2ZdYyeXr-1" value="&lt;div style=&quot;&quot;&gt;Importante:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;El valor del secreto en el Key Vault rotará cada ValidityPeriodDays - 30 días&lt;/li&gt;&lt;li&gt;Cada llave de acceso del ST será rotada como máximo cada (ValidityPeriodDays - 30)*2 días&lt;/li&gt;&lt;li&gt;El valor útil de la llave de acceso del ST será la almacenada en el secreto del Kay Vault&lt;/li&gt;&lt;li&gt;La fecha de expiración del secreto en el Key Vault servirá sólo para iniciar el proceso de rotación, mas no invalidará ninguna de las llaves de acceso del ST.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;El proceso será transparente para los servicios Azure que obtengan el valor de la llave de acceso desde el secreto del Key Vault&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Para los servicios externos, a los cuales se le comparte la llave de acceso de forma &quot;manual&quot;, se debe enviar la nueva llave de acceso útil.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="600" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Cg-qmFujOHBbW178wEKF" name="Rotación de llaves de acceso ST - Contexto">
+    <mxGraphModel dx="518" dy="1820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u2kfY7iSUENpfg3OF0mU-5" value="Sistema de eventos" style="whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1804" y="50" width="376" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1" source="XYxY_0fvi3l5-d3zep0_-3" target="XYxY_0fvi3l5-d3zep0_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-3" value="Storage Account" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="80" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" edge="1" parent="1" source="XYxY_0fvi3l5-d3zep0_-5" target="XYxY_0fvi3l5-d3zep0_-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-5" value="Key Vault Secret" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-6" value="Event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="XYxY_0fvi3l5-d3zep0_-7" target="XYxY_0fvi3l5-d3zep0_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-7" value="Event Grid System Topic&lt;div&gt;(&lt;span style=&quot;background-color: initial;&quot;&gt;Event&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Subscription)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-15" value="Event" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1" source="XYxY_0fvi3l5-d3zep0_-16" target="XYxY_0fvi3l5-d3zep0_-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-16" value="Event Grid System Topic" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SrXrHbBEt5PRq0NriGRR-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XYxY_0fvi3l5-d3zep0_-19" target="XYxY_0fvi3l5-d3zep0_-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2100" y="350" />
+              <mxPoint x="1365" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SrXrHbBEt5PRq0NriGRR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XYxY_0fvi3l5-d3zep0_-19" target="XYxY_0fvi3l5-d3zep0_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-19" value="Function&lt;div&gt;(StorageAccoun&lt;/div&gt;&lt;div&gt;AccessKeyRotation)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;horizontal=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-24" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;En un paso inicial, se crea el Storage Account y se guarda en un secreto en el Key Vault el valor de la llave de acceso primaria.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="-40" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="u2kfY7iSUENpfg3OF0mU-6" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;El último valor del secreto en el Key Vault será el valor útil, el que se debería usar por los sistemas que requieran de la llave de acceso del Storage Account.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;El secreto almacenado tendrá los siguientes tags para la operación:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;CredentialId: ayuda a identificar la llave almacenada posibles valores, rota entre key1 o key2&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ProviderAddress: corresponde al id del Storage Account&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ValidityPeriodDays: indica la cantidad de días que será válido el secreto. Ayuda a extablecer el tiempo de expiración de la llave rotada.&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Adicionalmente se debe establecer una fecha de expiración al secreto&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="-340" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="kRoo-2Par4iTLeIj-TzA-2" value="&lt;div style=&quot;&quot;&gt;Se crea un Event System Topic el cual está diseñado para recibir notificación de eventos de recursos de Azure. Cuando se crea se establece el recurso origen de dichos eventos.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="-70" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kRoo-2Par4iTLeIj-TzA-3" value="&lt;div style=&quot;&quot;&gt;Se crea una suscripción a un evento del Key Vault de tipo&amp;nbsp;SecretNearExpiry. Esto genera un evento cuando el secreto está a 30 días de expirar.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="-70" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XYxY_0fvi3l5-d3zep0_-27" value="&lt;div&gt;La función es creada para con un trigger de tipo event grid&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Con los datos del evento se obtiene información del secreto en el Key Vault que generó el evento de&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Entre los datos requeridos se obtiene los valores de los tags asociados al secreto&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;CredentialId&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;ProviderAddress&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;ValidityPeriodDays&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Basado en el actual valor de CredentialId, se rota al siguiente, el cual está entre key1 o key2. Esto ayuda a identificar la llave que será rotada y almacenada en el secreto del Kay vault.&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Con los datos de ProviderAddress y el nuevo CredentialId se rota la llave del Storage Account.&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Ejemplo: si CredentialId era key1, el valor nuevo es key2, por tanto esa es la llave de acceso que se rotará en el Storage Account.&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Por último se crea un nuevo valor en el secreto del Key Vault el cual corresponde a la llave de acceso rotada en el proceso anterior, se asignan los tags con los nuevos valores, además de establecer la nueva fecha de expiración del secreto que corresponde al valor de ValidityPeriodDays sumado a la fecha actual.&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="180" width="500" height="326" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Rotación de llaves de acceso ST" id="fZZr_WxmanUacN-R6k5w">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2UWE28Y7-cGrshaWVusI-19" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Subscription 1&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;strokeColor=#FFD966;" parent="1" vertex="1">
+          <mxGeometry x="30" y="306" width="621" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-25" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Subscription 2&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;strokeColor=#FFD966;" parent="1" vertex="1">
+          <mxGeometry x="840" y="281" width="300" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-7" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Function App&lt;/font&gt;" style="fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#000000;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="870" y="342" width="240" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-23" value="&lt;span style=&quot;font-size: 12px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Event Grid System Topic&lt;/span&gt;" style="fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#000000;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
+          <mxGeometry x="422" y="346" width="206" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-8" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/iot/Function_Apps.svg;" parent="1" vertex="1">
+          <mxGeometry x="870" y="341.99999999999994" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;strokeColor=#007FFF;" parent="1" source="2UWE28Y7-cGrshaWVusI-9" target="2UWE28Y7-cGrshaWVusI-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="413" />
+              <mxPoint x="1060" y="216" />
+              <mxPoint x="244" y="216" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-9" value="&lt;font color=&quot;#000000&quot;&gt;StorageAccounAccessKeyRotation&lt;/font&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#1ba1e2;shape=mxgraph.mscae.oms.services;fontSize=12;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="976" y="405" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-11" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" parent="1" vertex="1">
+          <mxGeometry x="1073.15" y="485" width="36.85" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-12" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Plans.svg;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="341.99999999999994" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-24" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Event&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" parent="1" source="2UWE28Y7-cGrshaWVusI-13" target="2UWE28Y7-cGrshaWVusI-23" edge="1">
+          <mxGeometry y="-16" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="447" y="420" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-13" value="Key Vault" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" parent="1" vertex="1">
+          <mxGeometry x="210" y="386" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-14" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Subscriptions.svg;" parent="1" vertex="1">
+          <mxGeometry x="30" y="306" width="18.59" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" parent="1" source="2UWE28Y7-cGrshaWVusI-15" target="2UWE28Y7-cGrshaWVusI-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-15" value="Storage Account" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" parent="1" vertex="1">
+          <mxGeometry x="55" y="394" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;startArrow=classic;startFill=1;endArrow=none;endFill=0;dashed=1;strokeWidth=2;" parent="1" source="2UWE28Y7-cGrshaWVusI-17" target="2UWE28Y7-cGrshaWVusI-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-17" value="Entra ID" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Azure_Active_Directory.svg;" parent="1" vertex="1">
+          <mxGeometry x="60" y="91" width="70" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-18" value="Managed Identity" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Managed_Identities.svg;" parent="1" vertex="1">
+          <mxGeometry x="205" y="90" width="68" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-49" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Managed_Identities.svg;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="376" width="30.91" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-2" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Topics.svg;" parent="1" vertex="1">
+          <mxGeometry x="421" y="344" width="32.38" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-26" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Event&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" parent="1" source="2UWE28Y7-cGrshaWVusI-1" target="2UWE28Y7-cGrshaWVusI-9" edge="1">
+          <mxGeometry x="-0.0868" y="-16" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-1" value="EventGrid System Topic&lt;div&gt;Event Subscription&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Subscriptions.svg;" parent="1" vertex="1">
+          <mxGeometry x="491.5" y="390" width="67" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;strokeColor=#007FFF;" parent="1" source="2UWE28Y7-cGrshaWVusI-9" target="2UWE28Y7-cGrshaWVusI-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="413" />
+              <mxPoint x="1060" y="216" />
+              <mxPoint x="88" y="216" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-29" value="1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="385.99999999999994" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-30" value="1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="37" y="585" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-41" value="3" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="37" y="670" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-32" value="2" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="386" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-35" value="3" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="386" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-36" value="4.1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="144" y="226" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-37" value="4.2" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="226" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-38" value="4" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="378" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-33" value="2" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="37" y="625" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-42" value="4" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="37" y="710" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-39" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Inicialmente se almacena en un secreto del key vault la llave primaria de acceso del&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;storage account con una fecha de expiración de 75 días. Cada llave rota cada 90 días&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="67" y="580" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-43" value="&lt;span style=&quot;text-align: center; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;El EventGrid System Topic&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; text-wrap: nowrap; background-color: initial;&quot;&gt;Event Subscription enruta el evento hacia una función que&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; text-wrap: nowrap; background-color: initial;&quot;&gt;se encarga de realizar el proceso de rotación de llaves de acceso&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="67" y="665" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-40" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Cuando el secreto esté cerca a expirar (30 días), se genera un evento de tipo&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;SecretNearExpiry&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;el cual es enviado al&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); text-align: center; text-wrap: nowrap;&quot;&gt;Event Grid System Topic&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="67" y="620" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UWE28Y7-cGrshaWVusI-44" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;La función recibe el evento, rota la otra llave del storage account y la almacena en el secreto&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;del key vault.&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="67" y="705" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YnGXoeyHL32SW1i-beLw-1" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="630" y="585" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9kTTmOfmLpjeDXTdC3WJ-1" value="&lt;div style=&quot;&quot;&gt;Se puede agregar un proceso de notificación cuando la llave sea rotada en el secreto del Key Vault&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=center;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="787" y="590" width="200" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Rotación de secreto regsitro de aplicación - Flujo de datos" id="Yh0slR7bpzYL-MywRABb">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="82BO3MnDSIzr6zYUIbQJ-0" />
+        <mxCell id="82BO3MnDSIzr6zYUIbQJ-1" parent="82BO3MnDSIzr6zYUIbQJ-0" />
+        <mxCell id="82BO3MnDSIzr6zYUIbQJ-2" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, expiración día 0 +75&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Creación inicial del secreto en el Key Vault&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, expiración día 0 +75&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" parent="82BO3MnDSIzr6zYUIbQJ-1" vertex="1">
+          <mxGeometry x="40" y="50" width="250" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="82BO3MnDSIzr6zYUIbQJ-3" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, expiración día 45 +30&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;30 días antes del vencimiento del secreto, es decir a los 45 días de creado el secreto, se genera el evento de&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Se ejecuta el proceso de rotación de llaves&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password1&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, expiración día 45 +30&lt;/li&gt;&lt;li&gt;client secret: password1, expiración día 0 +75&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" parent="82BO3MnDSIzr6zYUIbQJ-1" vertex="1">
+          <mxGeometry x="334.5" y="50" width="250" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="82BO3MnDSIzr6zYUIbQJ-4" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password1&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, expiración día 90 (30 expirado)&lt;/li&gt;&lt;li&gt;client secret: password1, expiración día 45 +30&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nuevamente a los 30 días antes del vencimiento del secreto, es decir a los 45 días de la última rotación, se genera el evento de&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Se ejecuta el proceso de rotación de llaves&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password2&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, (expirado)&lt;/li&gt;&lt;li&gt;client secret: password1, expiración día 45 +30&lt;/li&gt;&lt;li&gt;client secret: password2, expiración día 0 +75&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" parent="82BO3MnDSIzr6zYUIbQJ-1" vertex="1">
+          <mxGeometry x="620" width="250" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="mGluA-3-gvwxAFQb_m8S-0" value="&lt;div style=&quot;&quot;&gt;Datos iniciales&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password2&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, (expirado)&lt;/li&gt;&lt;li&gt;client secret: password1, expiración día 90 (30 expirado)&lt;/li&gt;&lt;li&gt;client secret: password2, expiración día 45 +30&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;Acciones:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nuevamente a los 30 días antes del vencimiento del secreto, es decir a los 45 días de la última rotación, se genera el evento de&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Se ejecuta el proceso de rotación de llaves&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Datos finales:&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Nombre de secreto: app-reg-secret&lt;/li&gt;&lt;li&gt;tags:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;CredentialId: password1&lt;/li&gt;&lt;li&gt;ProviderAddress: Application Client ID&lt;/li&gt;&lt;li&gt;ValidityPeriodDays: 75&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Application registration&lt;/li&gt;&lt;ul&gt;&lt;li&gt;client secret: password, (expirado)&lt;/li&gt;&lt;li&gt;client secret: password1, expiración día 0 +75&lt;/li&gt;&lt;li&gt;client secret: password2, expiración día 45 +30&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" vertex="1" parent="82BO3MnDSIzr6zYUIbQJ-1">
+          <mxGeometry x="910" width="250" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="82BO3MnDSIzr6zYUIbQJ-5" value="&lt;div style=&quot;&quot;&gt;Importante:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;El valor del secreto en el Key Vault rotará cada ValidityPeriodDays - 30 días&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Cada llave de acceso del ST será rotada como máximo cada (ValidityPeriodDays - 30)*2 días&lt;/li&gt;&lt;li&gt;El valor útil de la llave de acceso del ST será la almacenada en el secreto del Kay Vault&lt;/li&gt;&lt;li&gt;La fecha de expiración del secreto en el Key Vault servirá sólo para iniciar el proceso de rotación, mas no invalidará ninguna de las llaves de acceso del ST.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;El proceso será transparente para los servicios Azure que obtengan el valor de la llave de acceso desde el secreto del Key Vault&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Para los servicios externos, a los cuales se le comparte la llave de acceso de forma &quot;manual&quot;, se debe enviar la nueva llave de acceso útil.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;dashed=1;align=left;" parent="82BO3MnDSIzr6zYUIbQJ-1" vertex="1">
+          <mxGeometry x="40" y="620" width="600" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="pendiente" id="9hMxIk6zsBkxmyMqEsPO">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-0" />
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-1" parent="kExKvFFj_C3QVHxMIAXy-0" />
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-2" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Subscription 1&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;strokeColor=#FFD966;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="30" y="260" width="621" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-3" value="&lt;span style=&quot;text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Subscription 2&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;strokeColor=#FFD966;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="840" y="235" width="300" height="331" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-4" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Function App&lt;/font&gt;" style="fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#000000;whiteSpace=wrap;html=1;fontSize=9;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="870" y="296" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-5" value="&lt;span style=&quot;font-size: 12px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Event Grid System Topic&lt;/span&gt;" style="fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#000000;whiteSpace=wrap;html=1;fontSize=9;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="422" y="300" width="206" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-6" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/iot/Function_Apps.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="870" y="295.99999999999994" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;strokeColor=#007FFF;" parent="kExKvFFj_C3QVHxMIAXy-1" source="kExKvFFj_C3QVHxMIAXy-8" target="kExKvFFj_C3QVHxMIAXy-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="367" />
+              <mxPoint x="1060" y="170" />
+              <mxPoint x="244" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-8" value="&lt;font color=&quot;#000000&quot;&gt;StorageAccounAccessKeyRotation&lt;/font&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#1ba1e2;shape=mxgraph.mscae.oms.services;fontSize=12;fontColor=#ffffff;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="976" y="359" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-9" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;AppRegistrationClientSecretRotation&lt;/span&gt;&lt;/font&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#1ba1e2;shape=mxgraph.mscae.oms.services;fontSize=9;fontColor=#ffffff;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="976" y="465" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-10" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="1073.15" y="525" width="36.85" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-11" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Plans.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="1080" y="295.99999999999994" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-12" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Event&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" parent="kExKvFFj_C3QVHxMIAXy-1" source="kExKvFFj_C3QVHxMIAXy-13" target="kExKvFFj_C3QVHxMIAXy-5" edge="1">
+          <mxGeometry y="-16" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="447" y="374" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-13" value="Key Vault" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="210" y="340" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-14" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Subscriptions.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="30" y="260" width="18.59" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" parent="kExKvFFj_C3QVHxMIAXy-1" source="kExKvFFj_C3QVHxMIAXy-16" target="kExKvFFj_C3QVHxMIAXy-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-16" value="Storage Account" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="55" y="348" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-17" value="App Registration" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/App_Registrations.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="917.0000000000001" y="30" width="63" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;startArrow=classic;startFill=1;endArrow=none;endFill=0;dashed=1;strokeWidth=2;" parent="kExKvFFj_C3QVHxMIAXy-1" source="kExKvFFj_C3QVHxMIAXy-19" target="kExKvFFj_C3QVHxMIAXy-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-19" value="Entra ID" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Azure_Active_Directory.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="80" y="40" width="70" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-20" value="Managed Identity" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Managed_Identities.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="225" y="39" width="68" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-21" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Managed_Identities.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="1020" y="330" width="30.91" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-22" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Topics.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="421" y="298" width="32.38" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-23" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;SecretNearExpiry&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Event&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;" parent="kExKvFFj_C3QVHxMIAXy-1" source="kExKvFFj_C3QVHxMIAXy-24" target="kExKvFFj_C3QVHxMIAXy-8" edge="1">
+          <mxGeometry x="-0.0868" y="-16" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-24" value="EventGrid System Topic&lt;div&gt;Event Subscription&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Subscriptions.svg;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="491.5" y="344" width="67" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;targetPerimeterSpacing=10;sourcePerimeterSpacing=10;strokeColor=#007FFF;" parent="kExKvFFj_C3QVHxMIAXy-1" source="kExKvFFj_C3QVHxMIAXy-8" target="kExKvFFj_C3QVHxMIAXy-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="367" />
+              <mxPoint x="1060" y="170" />
+              <mxPoint x="88" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-26" value="1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="150" y="339.99999999999994" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-27" value="1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="37" y="539" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-28" value="3" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="37" y="624" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-29" value="2" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="340" y="340" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-30" value="3" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="730" y="340" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-31" value="4.1" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="144" y="180" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-32" value="4.2" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="300" y="180" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-33" value="4" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="960" y="332" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-34" value="2" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="37" y="579" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-35" value="4" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;glass=0;rounded=1;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="37" y="664" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-36" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Inicialmente se almacena en un secreto del key vault la llave primaria de acceso del&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;storage account con una fecha de expiración de 75 días. Cada llave rota cada 90 días&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="67" y="534" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-37" value="&lt;span style=&quot;text-align: center; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;El EventGrid System Topic&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; text-wrap: nowrap; background-color: initial;&quot;&gt;Event Subscription enruta el evento hacia el una función que&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center; text-wrap: nowrap; background-color: initial;&quot;&gt;se encarga de ejecutar el proceso de rotación de llaves de acceso&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="67" y="619" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-38" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Cuando el secreto esté cerca a expirar (30 días), se genera un evento de tipo&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;SecretNearExpiry&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;el cual es enviado al&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); text-align: center; text-wrap: nowrap;&quot;&gt;Event Grid System Topic&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="67" y="574" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-39" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;La función recibe el evento, rota la otra llave del storage account y la almacena en el secreto&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;del key vault.&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="67" y="659" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kExKvFFj_C3QVHxMIAXy-40" value="&lt;div&gt;75 días para rotar la llave&lt;/div&gt;&lt;div&gt;(75-30)*2 = 90 días duración llaves&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;*key1 -&amp;gt; 0 días&lt;div&gt;key2 -&amp;gt; 0&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;días&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rotar llave&lt;/div&gt;&lt;div&gt;key1 -&amp;gt; 45 días&lt;div&gt;*key2 -&amp;gt; 45&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;días -&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;0 días&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;rotar llave&lt;/div&gt;&lt;div&gt;*key1 -&amp;gt; 90 días -&amp;gt; 0 días&lt;div&gt;key2 -&amp;gt; 45 días&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="kExKvFFj_C3QVHxMIAXy-1" vertex="1">
+          <mxGeometry x="615" y="559" width="210" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

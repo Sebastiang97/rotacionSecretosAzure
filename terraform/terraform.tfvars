@@ -1,0 +1,2 @@
+app="KeyVaultRotation"
+environment="dev"

@@ -1,0 +1,17 @@
+{
+    "id": "00eccf70-95a7-4e7c-8299-2eb17ee9ad64",
+    "source": "/subscriptions/312dad7f-7451-46d2-982b-e94e8c8198a2/resourceGroups/vaultrotation-rg-poc/providers/Microsoft.KeyVault/vaults/vaultrotation-kv-poc",
+    "subject": "AppRegistrationClientSecret",
+    "type": "Microsoft.KeyVault.KeyNearExpiry",
+    "time": "2019-07-25T01:08:33.1036736Z",
+    "data": {
+        "Id": "https://vaultrotation-kv-poc.vault.azure.net/secrets/AppRegistrationClientSecret/79c56deea35d4c97bbe4d5b2e6e480cf",
+        "VaultName": "vaultrotation-kv-poc",
+        "ObjectType": "Secret",
+        "ObjectName": "AppRegistrationClientSecret",
+        "Version": "ee059b2bb5bc48398a53b168c6cdcb10",
+        "NBF": "1559081980",
+        "EXP": "1559082102"
+    },
+    "specversion": "1.0"
+}

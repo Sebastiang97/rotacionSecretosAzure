@@ -1,0 +1,56 @@
+$endDate = (Get-Date).AddDays(+30).ToString('yyy-MM-ddTHH:mm:ssZ')
+
+# Borra todas las credenciales y crea una nueva
+
+az ad app credential reset --id 1cd47345-fc12-48f5-95a4-9eb411aad777
+
+# Agrega una credencial nueva y le asigna un nombre, en el portal es el description
+
+az ad app credential reset --append --id 1cd47345-fc12-48f5-95a4-9eb411aad777 --display-name client-secret
+
+
+az ad app credential reset --append --id 1cd47345-fc12-48f5-95a4-9eb411aad777 --display-name client-secret --end-date $endDate
+
+
+
+$item = $(az ad app credential list --id 1cd47345-fc12-48f5-95a4-9eb411aad777 | ConvertFrom-Json)[0]
+
+az ad app credential list --id 1cd47345-fc12-48f5-95a4-9eb411aad777
+
+# El Script cuando rote la primera vez debe tomar el display name del client secret,
+# crear uno nuevo con esa base client-secret-name-rotated-1 y almacenarlo en el secret del key vault con una fecha de expiración especificada por ValidityPeriodDays
+# El secret del key vault tendrá tags
+# CredentialId -> Nombre del client secret
+# ProviderAddress -> application client id
+# ValidityPeriodDays -> duración de validez tendrá el client secret
+# Dos llaves activas
+# Cuando se va a vencer (1), se crea la otra (2) y se actualiza en el key vault. Eso indica que se debe cambiar el client secret que usan las aplicaciones
+# las aplicaciones que tomen dicho valor desde el key vault, resuelto.
+# para las aplicaciones de terceros se debe notificar que se debe hacer ese cambio 
+# antes de 30 (tiempo manejado por el servicio de eventos dekey vault) días antes que venza el client secret.
+# en la proxima ejecución en donde se vaya a generar de nuevo el client secret para (1)
+# el client secret (1) debe ser borrado y creado uno nuevo con el mismo nombre.
+# en ese punto el cliente secret (1) antiguo ya no debería ser usado por nadie. 
+
+$secret = (az ad app credential reset --append --id 1cd47345-fc12-48f5-95a4-9eb411aad777 --display-name client-secret --end-date $endDate|ConvertFrom-Json).password
+
+$tomorrowDate = (Get-Date).AddDays(+1).ToString('yyy-MM-ddTHH:mm:ssZ')
+
+az keyvault secret set --name AppRegistrationClientSecret --vault-name vaultrotation-kv-poc --value $secret --tags "CredentialId=client-secret" "ProviderAddress=1cd47345-fc12-48f5-95a4-9eb411aad777" "ValidityPeriodDays=60" --expires $endDate
+
+az keyvault secret set --name AppRegistrationClientSecret --vault-name vaultrotation-kv-poc --value $secret --tags "CredentialId=client-secret" "ProviderAddress=1cd47345-fc12-48f5-95a4-9eb411aad777" "ValidityPeriodDays=60" --expires $tomorrowDate
+
+
+az role assignment create --role
+                          --scope
+                          [--assignee]
+                          [--assignee-object-id]
+                          [--assignee-principal-type {ForeignGroup, Group, ServicePrincipal, User}]
+                          [--condition]
+                          [--condition-version]
+                          [--description]
+                          [--name]
+
+az role assignment create
+
+3f0a70d1-d1dc-4cba-be93-8c13a1d75577
