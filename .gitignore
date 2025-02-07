@@ -3,6 +3,7 @@
 *.tfstate.backup
 .terraform/
 .terraform.lock.hcl
+.terraform.tfstate.lock.info
 
 # Terraform variables (pueden contener credenciales sensibles)
 *.tfvars
