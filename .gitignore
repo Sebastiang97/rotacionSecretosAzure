@@ -1,0 +1,32 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Terraform variables (pueden contener credenciales sensibles)
+*.tfvars
+*.tfvars.json
+
+# Configuración local de Terraform
+.terraformrc
+.terraform.d/
+
+# Archivos de logs y depuración
+crash.log
+*.log
+
+# Archivos de credenciales y claves de acceso
+*.pem
+*.key
+*.crt
+*.pfx
+*.cer
+
+# Configuración de JetBrains (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+
+# Archivos de sistema y temporales de Mac/Linux/Windows
+.DS_Store
+Thumbs.db
+desktop.ini
