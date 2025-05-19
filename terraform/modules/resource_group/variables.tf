@@ -1,4 +1,4 @@
 variable "rg_name" {
   type    = string
-  default = "celula-devops-cloud"
+  default = "RG-DA-OFERVAL-PLATFORM-ENG"
 }

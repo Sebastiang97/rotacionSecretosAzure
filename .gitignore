@@ -9,3 +9,25 @@ local.settings.json
 __blobstorage__
 __queuestorage__
 __azurite_db*__.json
+
+# Archivos y directorios de Terraform
+terraform/.terraform/ # Plugin y módulos descargados, caché local
+terraform/.terraform.lock.hcl # (opcional: si quieres mantenerlo fuera del control de versiones)
+# Archivos de estado de Terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+# Archivos de estado para workspaces
+*.tfstate.*
+crash.log
+# Archivos de override o temporales
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# Archivos de logs y salidas
+*.log
+*.tfplan
+# Mac / OS / otros archivos comunes
+.DS_Store
